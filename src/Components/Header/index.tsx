@@ -28,30 +28,29 @@ const NavBar: React.FC = () => {
             <AiOutlineAlignRight size={50} />
           </button>
           {mobileMenu && <MobileMenu openMobileMenu={OpenMobileMenu} />}
-          <ul >
-            <li><a href="/">Home</a> </li>
-            <li><a href="/">Blog</a></li>
-            <li><a href="/">Loja</a></li>
-            <li><a href="/">Pages</a></li>
-            <li>
-              <div className='containerLogin'>
-                <button
-                  type="button"
-                  aria-label='Login'
-                >
-                  <a href="/">Login</a>
-                </button>
-              </div>
-            </li>
-          </ul>
-          <div className='containerClose'>
-            <button
-              type="button"
-              aria-label='Close'
-            >
-              <AiOutlineClose className="icon" />
-            </button>
-          </div>
+          <nav>
+
+            <ul >
+              <li><a href="/">Home</a> </li>
+              <li><a href="/">Blog</a></li>
+              <li><a href="/">Loja</a></li>
+              <li><a href="/">Pages</a></li>
+              <li>
+                <div className='containerLogin'>
+                  <button
+                    type="button"
+                    aria-label='Login'
+                    className='btnLogin'
+                  >
+                    <a href="/">Login</a>
+                  </button>
+                </div>
+              </li>
+              <li>
+
+              </li>
+            </ul>
+          </nav>
         </S.Nav>
       </S.Container>
 

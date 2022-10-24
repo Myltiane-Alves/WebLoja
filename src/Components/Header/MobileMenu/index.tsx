@@ -34,6 +34,7 @@ const MobileMenu:React.FC<MobileMenuProps> = ({ openMobileMenu }) => {
                   <button
                     type="button"
                     aria-label='Login'
+                    className='btnLogin'
                   >
                     <a href="/">Login</a>
                   </button>
@@ -45,6 +46,7 @@ const MobileMenu:React.FC<MobileMenuProps> = ({ openMobileMenu }) => {
               type="button"
               aria-label='Close'
               onClick={openMobileMenu}
+              className='btnClose'
             >
               <AiOutlineClose className="icon"/>
             </button>
