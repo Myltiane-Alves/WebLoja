@@ -27,11 +27,7 @@ export default function HeaderSlide() {
         className="mySwiper"
       >
         <SwiperSlide>
-          {/* <h1 className="title">
-            OFTALMOLOGIA CLÍNICA
-            ESPECIALIZADA EM RETINA E VÍTRE O
 
-          </h1> */}
           <div className="container">
             <div className="content">
               <h1>50% Off Para sua primeira compra</h1>
