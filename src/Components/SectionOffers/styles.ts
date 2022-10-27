@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  /* background-color: red; */
+  background-color: #f6f9fc;
   padding-top: 50px;
   padding-bottom: 50px;
   height: auto;
+  margin: 0;
+  /* padding: 0; */
   .cardsProduct {
 
     height: auto;
@@ -41,7 +43,7 @@ export const Container = styled.section`
           label {
             background-color: #0f3460;
             padding: 5px 10px;
-            font-size: 22px;
+            font-size: 16px;
             color: #fff;
             border-radius: 50px;
           }
@@ -56,10 +58,11 @@ export const Container = styled.section`
         flex-direction: column;
         /* background-color: green; */
         h3 {
-          font-size: 28px;
-          line-height: 32px;
+          /* font-size: 28px; */
+          line-height: 20px;
           font-weight: 500;
           color: #0f3460;
+          margin:  0;
         }
         .rate {
           .star {
@@ -77,7 +80,7 @@ export const Container = styled.section`
           align-items: center;
           color: #e94560;
           h4 {
-            font-size: 24px;
+            /* font-size: 24px; */
             font-weight: 700;
             line-height: 18px;
             margin: 0;
@@ -93,6 +96,14 @@ export const Container = styled.section`
             border-radius: 5px;
           }
         }
+      }
+    }
+
+    @media(min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      .product {
+        width: 75%;
       }
     }
   }
