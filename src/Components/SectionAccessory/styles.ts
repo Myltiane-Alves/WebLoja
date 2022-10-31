@@ -2,13 +2,22 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   background-color: #f6f9fc;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  /* background-color: blue; */
+  /* padding-top: 50px; */
+  /* padding-bottom: 50px; */
   height: auto;
   /* margin: 0; */
   /* padding: 0; */
+  width: 100%;
+  /* max-width: 90%; */
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3fr, 1fr);
+  }
   .cardsProduct {
-
+    /* background-color: red; */
     height: auto;
     display: flex;
     width: 100%;
@@ -111,7 +120,7 @@ export const Container = styled.section`
 
     @media(min-width: 768px) {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       .product {
         width: 75%;
       }

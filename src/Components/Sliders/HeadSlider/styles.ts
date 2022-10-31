@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Container = styled.section`
   width: 100%;
   display: flex;
-  height: auto;
+  height: 120vh;
+
   .swiper {
     width: 100%;
     margin-left: auto;
@@ -14,7 +15,12 @@ export const Container = styled.section`
     padding: 0;
     z-index: 1;
     height: 550px;
-    display: flex;
+    /* display: flex; */
+    flex-direction: column-reverse;
+    @media (max-width: 768px) {
+      height: 600px !important;
+      display: flex;
+    }
 
   }
 
@@ -34,13 +40,14 @@ export const Container = styled.section`
 .container {
   width: fit-content;
   /* height: fit-content; */
-  display: flex;
+  /* display: flex; */
+  flex-direction: column-reverse;
   justify-content: space-between;
   .content {
     width: 70%;
     /* background-color: yellow; */
     h1 {
-      font-size: 45px;
+      font-size: 32px;
       line-height: 40px;
       font-weight: 600;
       color: #0f3460;
@@ -54,7 +61,7 @@ export const Container = styled.section`
     }
     .colection {
       background: #ec6178;
-      height: 70px;
+      height: 50px;
       width: 200px;
       border-radius: 5px;
       border: none;
@@ -67,7 +74,6 @@ export const Container = styled.section`
     }
   }
   .slideRight {
-    /* background-color: red; */
     width: 50%;
     img {
       width: 80%;

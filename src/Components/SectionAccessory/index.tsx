@@ -1,14 +1,15 @@
 import { AiOutlineHeart, AiOutlinePlus, AiOutlineStar } from 'react-icons/ai'
 import * as S from './styles'
 import celular from '../../assets/images/flash/flash-3.png'
+import SiderBarCategory from '../SiderBarCategory'
 
-export default function OffersInstant() {
+export default function Accessory() {
   return (
     <S.Container>
+      {/* <SiderBarCategory /> */}
       <div className="cardsProduct">
         <div className="product">
           <div className="content">
-
             <span> 40% off</span>
             <img src={celular} alt="celular" />
             <div className="productLike">
@@ -35,7 +36,7 @@ export default function OffersInstant() {
             </div>
           </div>
         </div>
-        <div className="product">
+        {/* <div className="product">
           <div className="content">
             <img src="" alt="" />
             <span> 40% off</span>
@@ -121,7 +122,7 @@ export default function OffersInstant() {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
       </div>
     </S.Container>
