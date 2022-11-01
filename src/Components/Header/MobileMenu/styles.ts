@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: none;
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     display: flex;
     background-color: rgba(0, 0, 0, 0.6);
     /* background-color: red; */
@@ -16,7 +16,8 @@ export const Container = styled.div`
 `;
 
 export const Nav = styled.div`
-  @media (min-width: 768px) {
+  height: 100vh;
+  @media (max-width: 768px) {
     border-top-left-radius: 1rem;
     margin-left: auto;
     display: flex;
@@ -30,9 +31,10 @@ export const Nav = styled.div`
 
     .logoMenu {
       width: 180px;
+      padding-left: 30px;
       a {
         img {
-          width: 100px;
+          width: 70px;
         }
       }
 
@@ -43,12 +45,12 @@ export const Nav = styled.div`
       flex-direction: column;
 
       li {
-        font-size: 1.1rem;
+        font-size: 16px;
         list-style: none;
         text-align: start;
         cursor: pointer;
         & + li {
-          margin-top: 0.5rem;
+          margin-top: 8px;
         }
 
         a {
@@ -56,7 +58,7 @@ export const Nav = styled.div`
           font-weight: 600;
           line-height: 32px;
           color: #4b566b;
-          padding: 0.5rem;
+          padding: 8px;
           display: block;
           /* width: 100%; */
           &:hover {
@@ -66,11 +68,13 @@ export const Nav = styled.div`
         .containerLogin {
           padding-top: 30px;
           .btnLogin {
-            padding: 0.5rem;
+            padding: 8px;
             display: block;
             width: 150px;
             font-weight: bold;
             background-color: #ec6178;
+            border: 0;
+            border-radius: 5px;
             a {
               font-size: 20px;
               color: #fff;
@@ -86,11 +90,12 @@ export const Nav = styled.div`
         top: 30px;
         right: 24px;
         padding: 8px;
-        background: #ec6178;
+        background-color: transparent;
+        border: 0;
         .icon {
           font-size: 32px;
           font-weight: 700;
-          color: #fff;
+          color: #ec6178;
         }
       }
 

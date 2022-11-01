@@ -25,7 +25,7 @@ const NavBar: React.FC = () => {
             onClick={OpenMobileMenu}
             aria-label="Open Menu"
           >
-            <AiOutlineAlignRight size={50} />
+            <AiOutlineAlignRight size={25} />
           </button>
           {mobileMenu && <MobileMenu openMobileMenu={OpenMobileMenu} />}
           <nav>

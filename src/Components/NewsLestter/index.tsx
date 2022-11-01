@@ -6,8 +6,8 @@ export default function NewsLetter() {
     <S.Container>
       <div className="containerIcon">
         <FaRegEnvelope className="icon" />
-        <h2>Newsletter</h2>
-        <p>Junte-se Agora!</p>
+        <h2>Fique Por Dentro de Nossas Promoções</h2>
+        <p> Cadstre-se e receba nossas últimas atualizações e promoções!</p>
       </div>
       <div className="containerInput">
         <form>

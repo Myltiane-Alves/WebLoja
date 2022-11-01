@@ -7,11 +7,13 @@ export const Container = styled.section`
   width: 100%;
   padding-bottom: 30px;
   header {
+    padding-top: 20px;
     h2 {
       font-size: 32px;
       font-weight: 500;
       color: #4b566b;
       line-height: 40px;
+      text-align: center;
     }
   }
   .productCards {
@@ -53,5 +55,23 @@ export const Container = styled.section`
         text-align: center;
       }
     }
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 1200px) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media (min-width: 768px) {
+    header {
+      h2 {
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: 700;
+      }
+    }
+
   }
 `;

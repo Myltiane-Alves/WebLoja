@@ -34,8 +34,11 @@ export const Nav = styled.div`
       display: flex;
       padding: 16px;
       font-size: 32px;
-      color: #6996fa;
       background: transparent;
+      color: #6996fa;
+      border: 1px solid #fdfdfd;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
     }
 
     nav {
@@ -46,6 +49,9 @@ export const Nav = styled.div`
   @media (max-width: 500px) {
     button.mobileMenu {
       color: #6996fa;
+      border: 1px solid #fdfdfd;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
     }
   }
 

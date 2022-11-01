@@ -16,8 +16,9 @@ export const Container = styled.section`
       .containerTextLeft {
         display: flex;
         h2 {
+          font-size: 32px;
           color: #e94560;
-          line-height: 30px;
+          line-height: 40px;
           margin: 0;
         }
       }
@@ -44,17 +45,21 @@ export const Container = styled.section`
         /* background-color: blue */
         flex-direction: column;
         h4 {
-          font-size: 16px;
+          font-size: 20px;
           font-weight: 500;
           color: #000;
           margin: 0px;
+          padding-top: 10px;
+          line-height: 20px;
           /* text-align: center; */
         }
         p {
-          font-size: 12px;
+          font-size: 16px;
           font-weight: 500;
           color: #e94560;
           margin: 0px;
+          padding-top: 10px;
+          line-height: 20px;
           /* text-align: center; */
         }
         .containerImg {
@@ -70,6 +75,17 @@ export const Container = styled.section`
           grid-template-columns: repeat(6, 1fr);
           grid-gap: 30px;
           width: 80%;
+      }
+    }
+    @media (min-width: 768px) {
+      header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        align-content: center;
+        .containerTextRight {
+          justify-content: end;
+        }
       }
     }
   }

@@ -9,11 +9,15 @@
 a {
   text-decoration: none;
 }
-
+/* div {
+  display: flex;
+} */
 body {
   margin: 0;
   width: 100%;
   place-items: center;
+  box-sizing: border-box;
+  /* overflow: hidden; */
   /* min-width: 320px;
   min-height: 100vh; */
 }

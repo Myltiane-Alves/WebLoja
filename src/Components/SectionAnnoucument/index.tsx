@@ -6,10 +6,10 @@ export default function Announcements() {
     <S.Container>
       <div className="content">
         <div className="contentImg">
-          <img src={banner1} alt="Banner Promoção de Relógio" />
+          <img className="relogio" src={banner1} alt="Banner Promoção de Relógio" />
         </div>
         <div className="contentImg">
-          <img src={banner2} alt="Banner Promoção Minimalista" />
+          <img className="mini" src={banner2} alt="Banner Promoção Minimalista" />
         </div>
       </div>
     </S.Container>

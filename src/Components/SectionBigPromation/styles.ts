@@ -16,6 +16,7 @@ export const Container = styled.section`
       .containerTextLeft {
         display: flex;
         h2 {
+          font-size: 32px;
           color: #e94560;
           line-height: 30px;
           margin: 0;
@@ -26,6 +27,7 @@ export const Container = styled.section`
         display: flex;
         justify-content: space-around;
         span {
+          font-size: 16px;
           color: #e94560;
         }
       }
@@ -44,17 +46,19 @@ export const Container = styled.section`
         /* background-color: blue */
         flex-direction: column;
         h4 {
-          font-size: 16px;
+          font-size: 22px;
           font-weight: 500;
           color: #000;
           margin: 0px;
+          line-height: 24px;
           /* text-align: center; */
         }
         p {
-          font-size: 12px;
+          font-size: 16px;
           font-weight: 500;
           color: #e94560;
           margin: 0px;
+          line-height: 20px;
           /* text-align: center; */
         }
         .containerImg {

@@ -9,13 +9,24 @@ export const Container = styled.section`
     display: flex;
     justify-content: space-between;
     .contentImg {
-      img {
-        width: 100%;
+      .mini {
+        /* width: 100%; */
       }
     }
     @media(max-width: 768px) {
       display: grid;
       grid-template-columns: 2fr;
+
+        .contentImg {
+          display: flex;
+          .relogio {
+            /* width: 100%; */
+            /* height: auto; */
+          }
+
+      }
     }
+
   }
+
 `;
