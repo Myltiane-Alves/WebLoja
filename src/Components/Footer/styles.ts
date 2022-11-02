@@ -63,9 +63,9 @@ export const Container = styled.footer`
         }
       }
     }
-    .boxLink {
+    /* .boxLink {
       padding-left: 70px;
-    }
+    } */
 
     @media (min-width: 768px) {
       display: grid;
@@ -77,6 +77,10 @@ export const Container = styled.footer`
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       padding: 50px;
+      .boxLink {
+        padding-left: 70px;
+      }
+
     }
   }
 
