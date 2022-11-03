@@ -1,12 +1,13 @@
 import { AiOutlineHeart, AiOutlinePlus, AiOutlineStar } from 'react-icons/ai'
 import * as S from './styles'
 import celular from '../../assets/images/flash/flash-3.png'
-import SiderBarCategory from '../SiderBarCategory'
+
+import SiderBarBrand from '../SiderBarBrand'
 
 export default function Accessory() {
   return (
     <S.Container>
-      {/* <SiderBarCategory /> */}
+      <SiderBarBrand />
       <div className="cardsProduct">
         <div className="product">
           <div className="content">

@@ -12,19 +12,20 @@ export const Container = styled.section`
   /* max-width: 90%; */
   display: flex;
   justify-content: space-between;
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     display: grid;
     grid-template-columns: repeat(3fr, 1fr);
-  }
+  } */
   .cardsProduct {
     /* background-color: red; */
-    height: auto;
+    /* height: auto; */
     display: flex;
     width: 100%;
     padding: 13px;
     .product {
-      height: auto;
+      /* height: auto; */
       width: 200px;
+      height: 250px;
       background-color: #fff;
       padding: 20px;
       position: relative;
@@ -118,12 +119,18 @@ export const Container = styled.section`
       }
     }
 
+}
     @media(min-width: 768px) {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      .product {
-        width: 75%;
-      }
+
+        padding: 50px;
+        .cardsProduct {
+            padding: 50px;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            .product {
+            width: 75%;
+            }
+        }
     }
-  }
 `;
