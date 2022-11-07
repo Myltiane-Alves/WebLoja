@@ -26,17 +26,17 @@ export const Container = styled.section`
     @media (min-width: 768px) {
       /* height: 600px !important; */
       .swiper-wrapper {
-        background-color: red;
+        /* background-color: red; */
         height: 10vh;
         .swiper-slide {
           padding: 40px 0px;
-          background-color: blue;
+          /* background-color: blue; */
           height: 10px;
           .container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             padding: 50px;
-            background-color: yellow;
+            /* background-color: yellow; */
             .content {
               width: 100%;
 
@@ -60,7 +60,8 @@ export const Container = styled.section`
     }
 
     @media (min-width: 1200px) {
-        height: 70vh;
+        height: 90vh;
+        /* background-color: blue; */
         .swiper-wrapper {
             .swiper-slide {
             padding: 40px 0px;
@@ -84,10 +85,13 @@ export const Container = styled.section`
                 }
                 }
                 .slideRight {
-                width: 80%;
-                img {
-                    width: 100%;
-                }
+                    width: 80%;
+                    img {
+                        width: 80%;
+                    }
+                    .relogio {
+                        width: 70%;
+                    }
                 }
             }
             }

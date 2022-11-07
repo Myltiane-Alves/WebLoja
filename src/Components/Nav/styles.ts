@@ -4,6 +4,7 @@ export const Container = styled.header`
   width: 100%;
   height: 130px;
   /* background-color: red; */
+  box-shadow: -1px 15px 17px -8px rgb(0 0 0 / 10%);
 `;
 
 export const Nav = styled.div`
@@ -20,7 +21,7 @@ export const Nav = styled.div`
     top: 10px;
     a {
       img {
-        width: 100px;
+        width: 80px;
       }
     }
   }
@@ -77,9 +78,11 @@ export const Nav = styled.div`
         }
         .containerLogin {
           .btnLogin {
-            padding: 1rem 1.87rem;
+            /* padding: 16px 30px; */
+            width: 120px;
+            height: 45px;
             border-radius: 5px;
-            line-height: 1.3rem;
+            line-height: 20px;
             transition: filter 0.2s;
             background-color: #ec6178;
             border: none;

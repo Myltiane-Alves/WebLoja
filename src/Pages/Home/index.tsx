@@ -1,6 +1,7 @@
 import FeaturedServices from '../../Components/FeaturedServices';
 import Footer from '../../Components/Footer';
-import Header from '../../Components/Header';
+import Header from '../../Components/Header/Header';
+import Nav from '../../Components/Nav';
 import NewsLetter from '../../Components/NewsLestter';
 import Accessory from '../../Components/SectionAccessory';
 import Announcements from '../../Components/SectionAnnoucument';
@@ -13,7 +14,8 @@ import HeaderSlide from '../../Components/Sliders/HeadSlider';
 export function Home() {
   return (
     <>
-      <Header />
+      <Header/>
+      {/* <Nav /> */}
       <HeaderSlide />
       <OffersInstant />
       <MainCategories />
