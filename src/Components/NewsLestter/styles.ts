@@ -85,4 +85,12 @@ export const Container = styled.section`
         padding-left: 100px;
     }
   }
+  @media  (min-width: 1200px) {
+    .containerInput {
+        padding-left: 100px;
+        form {
+            width: 60%;
+        }
+    }
+  }
 `;

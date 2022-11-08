@@ -86,8 +86,8 @@ export const Container = styled.aside`
         padding:  20px;
     }
   }
-  @media (min-width: 768px) {
-    height: 90vh;
+  @media (min-width: 1024px) {
+    height: 120vh;
     width: 30%;
 
   }

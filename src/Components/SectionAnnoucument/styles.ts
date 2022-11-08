@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   background-color: #f6f9fc;
-  padding: 50px 0;
+  padding: 50px;
   display: flex;
   width: 100%;
   .content {
@@ -13,18 +13,17 @@ export const Container = styled.section`
         /* width: 100%; */
       }
     }
-    @media(max-width: 768px) {
+    @media(min-width: 768px) {
       display: grid;
-      grid-template-columns: 2fr;
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: space-between;
 
-        .contentImg {
-          display: flex;
-          .relogio {
-            /* width: 100%; */
-            /* height: auto; */
-          }
-
-      }
+    }
+    @media(min-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+      width: 90%;
     }
 
   }

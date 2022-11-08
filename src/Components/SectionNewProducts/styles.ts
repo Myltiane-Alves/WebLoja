@@ -6,7 +6,7 @@ export const Container = styled.section`
   .containerContent{
     margin: auto;
     background-color: #fff;
-    width: 100%;
+    /* width: 90%; */
         header {
             background-color: #f6f9fc;
             flex-direction: column;
@@ -37,8 +37,7 @@ export const Container = styled.section`
             width: 100%;
 
             .contentProdruct {
-                width: 200px;
-                padding: 5px;
+                padding: 20px;
                 position: relative;
                 border-radius: 8px;
                 box-shadow: rgb(3 0 71 / 9%) 0 1 3;
@@ -86,7 +85,23 @@ export const Container = styled.section`
                 padding: 50px;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        .containerContent {
+            .containerProduct {
+                padding: 0px;
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                gap: 30px;
                 width: 100%;
+                .contentProdruct {
+                    width: 100%;
+                    .containerImg {
+                        width: 70%;
+                    }
+                }
             }
         }
     }

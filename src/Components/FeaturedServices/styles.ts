@@ -2,10 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   background-color: #f6f9fc;
-  /* padding: 50px; */
   height: auto;
-  width: 100%;
-  padding-bottom: 30px;
+  padding: 50px;
   header {
     padding-top: 20px;
     h2 {
@@ -19,11 +17,8 @@ export const Container = styled.section`
   .productCards {
     height: auto;
     width: 100%;
-    padding-top: 30px;
     .productCard {
       height: auto;
-      /* background-color: red; */
-
       background: #fff;
       padding: 20px;
       position: relative;
@@ -36,7 +31,6 @@ export const Container = styled.section`
         height: 70px;
         line-height: 70px;
         margin-bottom: 20px;
-        /* background-color: red; */
         img {
           width: 100%;
         }
@@ -66,12 +60,22 @@ export const Container = styled.section`
   }
   @media (min-width: 768px) {
     header {
-      h2 {
-        font-size: 48px;
-        line-height: 60px;
+        h2 {
+            font-size: 48px;
+            line-height: 60px;
+            font-weight: 700;
+        }
+    }
+
+  }
+  @media (min-width: 1024px) {
+    padding: 50px;
+      header {
+          h2 {
+              font-size: 48px;
+              line-height: 60px;
         font-weight: 700;
       }
     }
-
   }
 `;

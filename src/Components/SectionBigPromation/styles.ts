@@ -83,6 +83,7 @@ export const Container = styled.section`
           grid-template-columns: repeat(8, 1fr);
           grid-gap: 30px;
           width: 100%;
+          padding: 0;
       }
     }
   }

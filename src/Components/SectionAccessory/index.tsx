@@ -10,7 +10,7 @@ export default function Accessory() {
             <SiderBarBrand />
             <div className="contentCards">
                 <header>
-                    <h2>Acessórios</h2>
+                    {/* <h2>Acessórios</h2> */}
                 </header>
                 <div className="cardsProduct">
                     <div className="product">

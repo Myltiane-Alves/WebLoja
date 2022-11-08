@@ -111,5 +111,19 @@ export const Container = styled.section`
         width: 75%;
       }
     }
+    @media(min-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      .product {
+        width: 75%;
+      }
+    }
+    @media(min-width: 1200px) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      .product {
+        width: 75%;
+      }
+    }
   }
 `;
