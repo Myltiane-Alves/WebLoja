@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   background-color: #f6f9fc;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px;
   height: auto;
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     .containerTextLeft {
+        align-items: center;
       h2 {
         font-size: 20px;
         font-weight: 600;

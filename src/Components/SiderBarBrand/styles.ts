@@ -9,7 +9,7 @@ export const Container = styled.aside`
   padding: 30px 0;
   border-radius: 5px;
   margin-top: 5px;
-  height: 70vh;
+  display: none;
   header {
       .containerHeader {
         display: flex;
@@ -66,7 +66,6 @@ export const Container = styled.aside`
             font-weight: 700;
             color: #fff;
             border: none;
-            /* border: 1px solid #e9ecef; */
             border-radius: 5px;
             background-color: #bdddff;
             :hover {
@@ -78,6 +77,19 @@ export const Container = styled.aside`
   }
   @media (min-width: 768px) {
     height: 120vh;
+    width: 30%;
+    display: grid;
+    header {
+        height: auto;
+    }
+    .containerBox {
+        padding:  20px;
+    }
+  }
+  @media (min-width: 768px) {
+    height: 90vh;
+    width: 30%;
 
   }
+
 `;

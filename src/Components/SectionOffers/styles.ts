@@ -2,11 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   background-color: #f6f9fc;
-  padding-top: 50px;
-  padding-bottom: 50px;
   height: auto;
-  /* margin: 0; */
-  /* padding: 0; */
+  padding: 50px;
   .cardsProduct {
 
     height: auto;
@@ -60,13 +57,11 @@ export const Container = styled.section`
         }
         img {
           width: 80%;
-          /* height: 100px; */
         }
       }
       .productDetails {
         flex-direction: column;
         width: 200px;
-        /* background-color: green; */
         h3 {
           font-size: 16px;
           line-height: 18px;
@@ -111,7 +106,7 @@ export const Container = styled.section`
 
     @media(min-width: 768px) {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       .product {
         width: 75%;
       }

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-    /* background-color: green; */
+
     width: 100%;
     padding: 10px 5px 0px 3px;
     text-align: -webkit-center;
@@ -9,7 +9,7 @@ export const Container = styled.section`
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* background-color: red; */
+
         /* padding: 10px; */
         width: 90%;
         .containerLogo {
@@ -65,7 +65,10 @@ export const Container = styled.section`
             justify-content: space-between;
             align-items: center; */
             .containerLogo {
-                width: 80px;
+                background-color: #4b566b;
+                img {
+                    width: 8px;
+                }
             }
 
             .contentSearch {

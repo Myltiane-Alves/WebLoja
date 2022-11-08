@@ -4,6 +4,7 @@ export const Container = styled.section`
   background-color: #0f3460;
   display: flex;
   flex-direction: column;
+  padding: 10px;
   .containerIcon {
     flex-direction: column;
     display: flex;
@@ -31,7 +32,7 @@ export const Container = styled.section`
     align-items: center;
     justify-content: center;
     align-content: center;
-    padding-left: 100px;
+    padding-left: 20px;
     form {
       display: flex;
       align-items: center;
@@ -80,5 +81,8 @@ export const Container = styled.section`
     align-items: center;
     justify-content: center;
     align-content: center;
+    .containerInput {
+        padding-left: 100px;
+    }
   }
 `;

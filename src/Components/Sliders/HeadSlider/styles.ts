@@ -13,30 +13,23 @@ export const Container = styled.section`
     overflow: hidden;
     list-style: none;
     padding: 0;
-    /* z-index: 1; */
     height: 85vh;
-    /* background-color: yellow; */
     @media (max-width: 768px) {
-      /* height: 600px !important; */
       display: grid;
       grid-template-columns: repeat(2, 1);
 
     }
 
     @media (min-width: 768px) {
-      /* height: 600px !important; */
       .swiper-wrapper {
-        /* background-color: red; */
         height: 10vh;
         .swiper-slide {
           padding: 40px 0px;
-          /* background-color: blue; */
           height: 10px;
           .container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             padding: 50px;
-            /* background-color: yellow; */
             .content {
               width: 100%;
 
@@ -61,7 +54,6 @@ export const Container = styled.section`
 
     @media (min-width: 1200px) {
         height: 90vh;
-        /* background-color: blue; */
         .swiper-wrapper {
             .swiper-slide {
             padding: 40px 0px;
@@ -69,9 +61,7 @@ export const Container = styled.section`
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 padding: 50px;
-                /* height: 1vh; */
                 .content {
-                /* background-color: #0f3460; */
                 width: 100%;
                 padding-top: 50px;
                 height: 100%;
@@ -105,7 +95,6 @@ export const Container = styled.section`
       position: relative;
       width: 100%;
       height: 100%;
-      /* flex-direction: column; */
       transition-property: transform;
       box-sizing: content-box;
     }
@@ -133,9 +122,7 @@ export const Container = styled.section`
     .content {
       display: flex;
       flex-direction: column;
-      /* width: 100%; */
       height: auto;
-      /* background-color: #0f3460; */
       padding-bottom: 20px;
       h1 {
         font-size: 32px;
@@ -174,7 +161,6 @@ export const Container = styled.section`
       padding-bottom: 30px;
       img {
         width: 100%;
-
       }
     }
   }

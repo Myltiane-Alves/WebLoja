@@ -34,7 +34,6 @@ export default function BigPromation(){
             <p>R$ 120,00</p>
           </div>
 
-{/*
           <div className="contentProdruct">
             <div className="containerImg">
               <img src={altofalante} alt="Alto-falantes portáteis de Blueeto" />
@@ -83,7 +82,7 @@ export default function BigPromation(){
             </div>
             <h4>Lifesize Phone HD</h4>
             <p>R$ 350,00</p>
-          </div> */}
+          </div>
 
         </div>
 
