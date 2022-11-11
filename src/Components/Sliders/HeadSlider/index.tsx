@@ -35,7 +35,7 @@ export default function HeaderSlide() {
                             <button className="colection" type="button"> <a> Visitar Coleções </a></button>
                         </div>
                         <div className="slideRight">
-                            <img src={slidetenis} alt="médico com uma criança" width="100%" />
+                            <img src={slidetenis} alt="médico com uma criança" width="100%" className="tenis"/>
                         </div>
 
                     </div>

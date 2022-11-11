@@ -3,8 +3,11 @@ import styled from "styled-components";
 export const Container = styled.section`
   width: 100%;
   display: flex;
-  height: 100vh;
+  height: 130vh;
 
+  @media (min-width: 1200px) {
+    height: 100vh;
+  }
   .swiper {
     width: 100%;
     margin-left: auto;
@@ -13,14 +16,16 @@ export const Container = styled.section`
     overflow: hidden;
     list-style: none;
     padding: 0;
-    height: 85vh;
+    height: 125vh;
     @media (max-width: 768px) {
       display: grid;
       grid-template-columns: repeat(2, 1);
-
+      height: 126vh;
     }
 
     @media (min-width: 768px) {
+        height: 100vh;
+
       .swiper-wrapper {
         height: 10vh;
         .swiper-slide {
@@ -30,6 +35,7 @@ export const Container = styled.section`
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             padding: 50px;
+            height: 100vh;
             .content {
               width: 100%;
 
@@ -42,9 +48,15 @@ export const Container = styled.section`
             }
             .slideRight {
               width: 100%;
-              img {
-                width: 80%;
-              }
+              height: 50vh;
+                .tenis {
+
+                    width: 80%;
+                }
+                .relogio {
+                    width: 50% ;
+
+                }
             }
           }
         }
@@ -53,7 +65,7 @@ export const Container = styled.section`
     }
 
     @media (min-width: 1200px) {
-        height: 90vh;
+        height: 110vh;
         .swiper-wrapper {
             .swiper-slide {
             padding: 40px 0px;
@@ -76,6 +88,7 @@ export const Container = styled.section`
                 }
                 .slideRight {
                     width: 80%;
+                    height: 80vh;
                     img {
                         width: 80%;
                     }
@@ -159,9 +172,16 @@ export const Container = styled.section`
       width: 100%;
       height: auto;
       padding-bottom: 30px;
-      img {
-        width: 100%;
-      }
+
+        .tenis {
+
+            width: 80%;
+        }
+        .relogio {
+            width: 50% ;
+
+        }
+
     }
   }
 

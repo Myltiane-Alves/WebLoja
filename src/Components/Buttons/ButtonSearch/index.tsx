@@ -3,7 +3,7 @@ import { FiSearch } from "react-icons/fi";
 import { RiShoppingBagFill } from "react-icons/ri";
 import { FaUserAlt} from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/logo.png';
+import logo from '../../../assets/images/logo.png';
 export default function ButtonSearch() {
   return (
     <S.Container>
