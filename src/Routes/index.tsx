@@ -1,5 +1,6 @@
 import {BrowserRouter as  Router, Route, Routes } from "react-router-dom";
 import Cart from "../Components/Cart";
+import Contact from "../Pages/Contact";
 import { Home } from "../Pages/Home";
 import Login from "../Pages/Login";
 import PageCart from "../Pages/PageCart";
@@ -13,7 +14,10 @@ export function AppRoutes () {
             <Routes>
                 <Route path="/" element={<Home />} />
             </Routes>
-            <Routes>
+           <Routes>
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
+           <Routes>
                 <Route path="/login" element={<Login />} />
             </Routes>
             <Routes>
