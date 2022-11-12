@@ -24,7 +24,7 @@ const MobileMenu:React.FC<MobileMenuProps> = ({ openMobileMenu }) => {
                 <a href="/">Blog</a>
               </li>
               <li>
-                <a href="/">Loja</a>
+                <a href="/shop">Loja</a>
               </li>
               <li>
                 <a href="/">Pages</a>

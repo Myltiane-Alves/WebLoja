@@ -33,7 +33,7 @@ const NavBar: React.FC = () => {
             <ul >
               <li><a href="/">Home</a> </li>
               <li><a href="/">Blog</a></li>
-              <li><a href="/">Loja</a></li>
+              <li><a href="/shop">Loja</a></li>
               <li><a href="/">Pages</a></li>
               <li>
                 <div className='containerLogin'>

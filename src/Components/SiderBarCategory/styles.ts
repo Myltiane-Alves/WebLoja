@@ -9,9 +9,10 @@ export const Container = styled.aside`
   padding: 15px 0;
   border-radius: 5px;
   margin-top: 5px;
+  display: none;
   .box {
     display: flex;
-    padding: 0 20px;
+    padding:  10px;
     img {
       width: 30px;
       height: 30px;
@@ -24,5 +25,46 @@ export const Container = styled.aside`
       text-transform: capitalize;
       color: #4b566b;
     }
+  }
+  .boxButton {
+
+      .btnSeeMore {
+            width: 100%;
+            height: 50px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            background-color: #bdddff;
+            :hover {
+                background-color: #ebf1f8;
+                color: #4b566b;
+            }
+      }
+  }
+
+  @media (min-width: 768px) {
+    height: auto;
+    width: 30%;
+    display: grid;
+    header {
+        height: auto;
+    }
+    .containerBox {
+        padding:  20px;
+        .boxButton {
+            padding-top: 20px;
+            button {
+                width: 80%;
+            }
+        }
+
+    }
+  }
+  @media (min-width: 1024px) {
+    height: 120vh;
+    width: 30%;
+
   }
 `;
