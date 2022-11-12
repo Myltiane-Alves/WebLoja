@@ -11,6 +11,18 @@ export default function SectionProducts() {
             <div className="containerCart">
                 <div className="containerImg">
                     <img src={oculos} alt="oculos" />
+                    <div className="description">
+                        <p className="">
+                            Características Técnicas:
+                            Acompanha: Pano de limpeza e case
+                            Formato: Losango
+                            Material das Lentes: Resina
+                            Material da Armação: Metal
+                            Tratamento nas lentes: Proteção UVA e UVB.
+                            Tamanho da lente: 52 mm Tamanho da ponte: 23  mm
+                            Comprimento da haste: 127 mm
+                        </p>
+                    </div>
                 </div>
                 <div className="detailsCard">
                     <h2>Oculos de Sol</h2>
@@ -53,7 +65,7 @@ export default function SectionProducts() {
 
 
                     </div>
-                    <div className="description">
+                    {/* <div className="description">
                         <p className="">
                             Características Técnicas:
                             Acompanha: Pano de limpeza e case
@@ -64,7 +76,7 @@ export default function SectionProducts() {
                             Tamanho da lente: 52 mm Tamanho da ponte: 23  mm
                             Comprimento da haste: 127 mm
                         </p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </S.Container>
