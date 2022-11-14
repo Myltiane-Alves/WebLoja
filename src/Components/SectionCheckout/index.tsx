@@ -1,51 +1,61 @@
 import * as S from './styles'
 import ButtonAdd from '../Buttons/ButtonAdd'
-import ButtonRemove from '../Buttons/ButtonMinus'
+
 import { IoIosClose } from "react-icons/io";
 import ButtonMinus from '../Buttons/ButtonMinus';
 import oculos from '../../assets/images/arrivals/arrivals1.png'
+import ButtonRemover from '../Buttons/ButtonRemover';
 
 export default function SectionCheckout() {
     return (
         <S.Container>
             <div className="containerCart">
                 <div className="cartDetails">
-                    <div className="cartListProduct">
-                        <div className="containerImg">
-                            <img src={oculos} alt="oculos" />
-                        </div>
-                        <div className="detailsCard">
+                    <div className="description">
+                        <header>
+                            <h3>Endereço de Entrega</h3>
+                            <span>Informe o endereço onde deseja receber seu pedido</span>
+                        </header>
+                    </div>
+                    <div className="cartContent">
 
-                            <h3>Oculos de Sol</h3>
-                            <div className="productPrice">
-                                <h4>Preço</h4>
-                                <span>R$ 50,00</span>
+                        <div className="cartListProduct">
+                            <div className="containerImg">
+                                <img src={oculos} alt="oculos" />
                             </div>
-                            <div className="containerButton">
-                                <div className="contentButton">
-                                    <ButtonAdd />
-                                    <span>1</span>
-                                    <ButtonMinus />
-                                <button>Remover</button>
+                            <div className="detailsCard">
+
+                                <h3>Oculos de Sol</h3>
+                                <div className="productPrice">
+                                    <h4>Preço</h4>
+                                    <span>R$ 50,00</span>
+                                </div>
+                                <div className="containerButton">
+                                    <div className="contentButton">
+                                        <ButtonAdd />
+                                        <span>1</span>
+                                        <ButtonMinus />
+                                    <ButtonRemover />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
 
-                    <div className="totalProduct">
-                        <h4>Finalize sua Compra</h4>
-                        <div className="totalPrice">
-                            <p>Items </p>
-                            <span>1</span>
-                        </div>
-                        <div className="totalPrice">
-                            <p>Entrega </p>
-                            <span>Grátis</span>
-                        </div>
-                        <div className="totalPrice">
-                            <p>Total: </p>
-                            <span>R$100,00</span>
+                        <div className="totalProduct">
+                            <h4>Finalize sua Compra</h4>
+                            <div className="totalPrice">
+                                <p>Items </p>
+                                <span>1</span>
+                            </div>
+                            <div className="totalPrice">
+                                <p>Entrega </p>
+                                <span>Grátis</span>
+                            </div>
+                            <div className="totalPrice">
+                                <p>Total: </p>
+                                <span>R$100,00</span>
+                            </div>
                         </div>
                     </div>
                 </div>

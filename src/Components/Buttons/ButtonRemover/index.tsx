@@ -1,5 +1,5 @@
 import * as S from './styles'
-import { AiOutlinePlus } from "react-icons/ai";
+import { FiTrash2 } from "react-icons/fi";
 
 export default function ButtonRemover() {
     return (
@@ -8,7 +8,7 @@ export default function ButtonRemover() {
                 type="button"
                 className="btn"
               >
-                <AiOutlinePlus size={25} />
+                <FiTrash2 size={25} />
               </button>
         </S.Container>
     )
