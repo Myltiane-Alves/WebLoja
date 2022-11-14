@@ -6,13 +6,21 @@ export const Container = styled.section`
   width: 100%;
   background-color: #0f3460;
 
+  header {
+    h1 {
+        font-size: 32px;
+        line-height: 30px;
+        color: #fff;
+        text-align: center;
+    }
+  }
   .contactForm {
     flex-direction: column;
     h2 {
       font-size: 32px;
       font-weight: bold;
+      text-align: center;
       color: #fff;
-      /* color: #e94560; */
       text-align: center;
       line-height: 40px;
     }
@@ -93,7 +101,12 @@ export const Container = styled.section`
   }
   .address {
     h2 {
-      color: #fff;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
     }
     .addressInfo {
 

@@ -4,7 +4,7 @@ export default function SectionContact() {
     return (
         <S.Container>
             <header>
-                <h1>Entre em Contato Conosco</h1>
+                <h1> Contato</h1>
             </header>
             <div className="content">
                 <div className="contactForm">
