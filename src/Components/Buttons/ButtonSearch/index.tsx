@@ -19,7 +19,9 @@ export default function ButtonSearch() {
         </div>
 
         <div className="containerIcon">
-            <FaUserAlt size={20}  className="icon"/>
+            <Link to="/login">
+                <FaUserAlt size={20}  className="icon"/>
+            </Link>
             <div className="cart" >
                 <Link to="/cart">
                     <RiShoppingBagFill size={20}  className="icon" />

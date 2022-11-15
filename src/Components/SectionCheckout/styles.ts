@@ -1,26 +1,19 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-    background-color: #f6f9fc;
-    /* background-color: #fff; */
+    background-color: #fff;
     height: auto;
     padding: 10px;
     flex-direction: column;
     .containerCart {
         flex-direction: column;
-        /* background-color: #FFF; */
-        /* padding: 20px; */
         position: relative;
         border-radius: 8px;
-        /* box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px; */
         margin: 10px;
         .orderComplete {
-            /* background-color: #F3F2F2; */
             .formPayment {
-                /* background-color: #0f3460; */
                 padding-bottom: 20px;
                 .orderDescription {
-
                     header {
                         padding: 10px;
                         h3 {
@@ -38,33 +31,29 @@ export const Container = styled.section`
                     }
                 }
                 .paymentForm {
-                    /* padding-top: 20px; */
                     padding: 20px;
                     background-color: #f3f2f2;
                     border-radius: 10px;
                     form {
                        .fields {
-                        display: flex;
-                        flex-direction: column;
+                            display: flex;
+                            flex-direction: column;
 
-                        .field {
-                            /* background-color: #fff; */
-                            width: 100%;
-                            /* padding-bottom: 10px; */
-                            padding: 10px;
-                            input {
-                                width: 270px;
-                                min-width: 0px;
-                                height: 45px;
-                                border-radius: 4px;
-                                /* padding: 12px; */
-                                background-color: #EEEDED;
-                                border: 1px solid #e0e0e0;
-                                outline: 2px solid transparent;
-                                gap: 4px;
+                            .field {
+                                width: 100%;
+                                padding: 10px;
+                                input {
+                                    width: 270px;
+                                    min-width: 0px;
+                                    height: 45px;
+                                    border-radius: 4px;
+                                    background-color: #EEEDED;
+                                    border: 1px solid #e0e0e0;
+                                    outline: 2px solid transparent;
+                                    gap: 4px;
 
+                                }
                             }
-                        }
                        }
                     }
                 }
@@ -72,7 +61,6 @@ export const Container = styled.section`
             }
             .paymentCard {
                 background-color: #f3f2f2;
-                /* background-color: red; */
                 border-radius: 10px;
                 header {
                     padding: 10px;
@@ -80,9 +68,11 @@ export const Container = styled.section`
                         font-size: 28px;
                         line-height: 25px;
                         color: #0f3460;
+                        text-align: center;
+
                     }
-                    span {
-                        font-size: 18px;
+                    p {
+                        font-size: 16px;
                         line-height: 25px;
                         text-align: center;
                         color: #0f3460;
@@ -90,7 +80,6 @@ export const Container = styled.section`
                     padding-bottom: 20px;
                 }
                 .containerButton {
-                    /* background-color: yellow; */
                     flex-direction: column;
                     display: flex;
                     padding-bottom: 20px;
@@ -99,38 +88,39 @@ export const Container = styled.section`
                         display: flex;
                         button {
                             align-items: center;
-                            padding: 16px;
+                            padding: 10px;
                             gap: 12px;
                             width: 178.67px;
                             height: 51px;
+                            color: #0f3460;
+                            font-size: 14px;
+                            font-weight: 500;
                             background: #EBE5F9;
-                            border: 1px solid #8047F8;
+                            border: 1px solid #0f346021;
                             border-radius: 6px;
                             flex: none;
                             order: 0;
                             flex-grow: 1;
                             text-transform: uppercase;
                         }
+                        button:hover {
+                            background-color: #f2f0f7;
+                        }
                     }
                 }
             }
         }
         .cartDetails {
-            /* background-color: #FFF; */
             flex-direction: column;
-            /* box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px; */
-            /* background-color: #fff; */
             width: 335px;
             border-radius: 8px;
             .description {
                 header {
                     padding: 10px;
-
                     h2 {
                         font-size: 28px;
                         line-height: 25px;
                         color: #0f3460;
-                        /* margin: 10px; */
                     }
                     span {
                         font-size: 18px;
@@ -144,17 +134,10 @@ export const Container = styled.section`
             .cartContent {
                 background-color: #f3f2f2;
                 .cartListProduct {
-                    /* /* background-color: #FFF; */
                     padding: 20px;
                     position: relative;
                     border-radius: 8px;
-                    /* box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px; */
-                    margin: 10px; */
-                    .containerImg {
-                        img {
-
-                        }
-                    }
+                    margin: 10px;
                     .detailsCard {
                         flex-direction: column;
                         .detailsDescription {
@@ -193,9 +176,7 @@ export const Container = styled.section`
                         }
                     }
                     .containerButton {
-
                         flex-direction: column;
-                        /* padding-right: 10px; */
                         display: flex;
                         .removeCart {
                             background: none;
@@ -204,20 +185,15 @@ export const Container = styled.section`
                             margin-right: 10px;
                         }
                         .contentButton {
-
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
-
                         }
                     }
                 }
                 .totalProduct {
                     display: flex;
                     flex-direction: column;
-                    /* background-color: #fff; */
-                    /* border-radius: 8px; */
-                    /* box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px; */
                     border-top: 1px solid #e0e0e0;
                     width: 275px;
                     padding: 20px;
@@ -245,6 +221,17 @@ export const Container = styled.section`
                             line-height: 16px;
                             color: #0f3460;
                         }
+                        .btnFinal {
+                            width: 100%;
+                            height: 50px;
+                            border: none;
+                            border-radius: 6px;
+                            color: #fff;
+                            font-size: 22px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            background-color: #e94560;
+                        }
                     }
                 }
             }
@@ -260,23 +247,10 @@ export const Container = styled.section`
             justify-content: space-between;
             .cartDetails {
                 width: 100%;
-                /* background-color: yellow; */
-                .description {
-
-                }
                 .cartContent {
-                    /* display: grid;
-                    grid-template-columns: repeat(2, 1fr); */
-
-
                     .cartListProduct {
-                        /* background-color: gray; */
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
-                        /* padding: 20px 0px 38px 20px; */
-                        /* margin: 0px 10px 0px 0px; */
-                        /* width: 430px; */
-
                         .containerImg {
                             display: flex;
                             width: 200px;
@@ -286,9 +260,7 @@ export const Container = styled.section`
                             }
                         }
                         .detailsCard {
-                            /* display: flex; */
                             width: 100%;
-                            /* background-color: red; */
                             .containerButton {
                                 display: flex;
                                 width: 100%;
@@ -297,7 +269,6 @@ export const Container = styled.section`
                                     display: flex;
                                     align-items: center;
                                     justify-content: space-between;
-                                    /* background-color: #8047F8; */
                                     width: 55%;
                                 }
                             }
@@ -311,11 +282,9 @@ export const Container = styled.section`
                     }
 
                     .totalProduct {
-                        /* background-color: blue; */
                         padding: 10px;
                         width: 96%;
                         border-top: 1px solid #e0e0e0;
-                        /* margin-left: 25px; */
                         .totalPrice {
                             display: flex;
                             align-items: center;
@@ -330,7 +299,6 @@ export const Container = styled.section`
 
             }
             .orderComplete {
-
                 .formPayment {
                     .paymentForm {
                         form {
@@ -353,64 +321,50 @@ export const Container = styled.section`
     }
     @media (min-width: 1200px) {
         padding: 50px;
-        /* background-color: yellow; */
         .containerCart {
-            /* padding: 50px; */
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            /* background-color: red; */
             .cartDetails {
-                width: 90%;
+                width: 100%;
+                max-width: 90%;
                 padding: 10px;
-                /* background-color: yellow; */
                 flex-direction: column;
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
                 .description {
-                    /* background-color: green; */
                     width: 98.5%;
-                    height: 14vh;
                     header {
                         background-color: transparent;
-
-                        /* padding-top: 30px; */
                     }
                     padding: 0;
                     margin: 0;
-                    /* height: 20px; */
                 }
                 .cartContent {
-                    /* height: 83vh; */
                     background-color: #f3f2f2;
-                    /* background-color: blue; */
-                    /* border-radius: 50px; */
                     .cartListProduct {
-                        width: 575px;
-                        /* background-color: #f3f2f2; */
-                        /* background-color: red; */
-                        /* height: 40vh; */
+                        width: 500px;
                         border-radius: 0px;
                         .containerImg {
 
                             img {
-                                width: 50%;
+                                width: 100%;
                             }
                         }
                         .detailsCard {
                             width: 100%;
                             display: flex;
-                            /* flex-direction: row; */
                             align-items: center;
-                            background-color: aliceblue;
                             padding: 10px;
-                            h3 {
-                                font-size: 32px;
-                                line-height: 36px;
-                                text-align: left;
+                            .detailsDescription {
+                                h3 {
+                                    font-size: 26px;
+                                    line-height: 30px;
+                                    text-align: left;
+                                }
+
                             }
                             .productPrice {
                                 width: 100%;
-                                /* background-color: #8047F8; */
                                 h4 {
                                     font-size: 24px;
                                     line-height: 20px;
@@ -423,7 +377,6 @@ export const Container = styled.section`
                             .containerButton {
                                 width: 100%;
                                 .contentButton {
-                                    /* background-color: #e94560; */
                                     width: 100%;
                                     justify-content: space-between;
                                     span {
@@ -435,15 +388,10 @@ export const Container = styled.section`
                         }
                     }
                     .totalProduct {
-                        /* width: 535px; */
-                        width: 97%;
-                        /* justify-self: end; */
-                        /* padding: 30px 30px 0px 30px; */
+                        width: 500px;
                         margin: 0;
-                        /* height: 41vh; */
                         border-radius: 0px;
                         background-color: #f3f2f2;
-                        /* background-color: blue; */
                         h4 {
                             font-size: 26px;
                             line-height: 30px;
@@ -459,28 +407,21 @@ export const Container = styled.section`
                             span {
                                 font-size: 18px;
                             }
+
                         }
                     }
                 }
             }
             .orderComplete {
-                /* background-color: #0f3460; */
                 padding: 10px;
                 width: 100%;
-
                 .formPayment {
-                    width: 95%;
-                    /* background-color: #8047F8; */
+                    width: 97%;
                     .oderDescription {
-                        /* background-color: #0f3460; */
                         height: 19vh;
-                        header {
-
-                        }
                         padding-bottom: 20px;
                     }
                     .paymentForm {
-                        /* padding-bottom: 50px; */
                         form {
                             .fields {
                                 display: grid;
@@ -496,15 +437,20 @@ export const Container = styled.section`
                     }
                 }
                 .paymentCard {
-                    width: 95%;
+                    width: 97%;
                     padding-bottom: 2px;
+                    header {
+                        p {
+                            text-transform: uppercase;
+                            font-size: 28px;
+                            line-height: 35px;
+
+                        }
+                    }
                     .containerButton {
                         display: grid;
                         grid-template-columns: repeat(3, 1fr);
-                        /* padding-bottom: 60px; */
-                        /* background-color: #0f3460; */
                         div {
-                            /* background-color: #e94560; */
                             button {
                                 width: 100%;
                             }

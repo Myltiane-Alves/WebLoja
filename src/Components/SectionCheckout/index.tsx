@@ -57,8 +57,15 @@ export default function SectionCheckout() {
                                 <span>Grátis</span>
                             </div>
                             <div className="totalPrice">
+                                <p>Desconto </p>
+                                <span>10%</span>
+                            </div>
+                            <div className="totalPrice">
                                 <p>Total: </p>
                                 <span>R$100,00</span>
+                            </div>
+                            <div className="totalPrice">
+                                <button className="btnFinal">Confirmar Pedido</button>
                             </div>
                         </div>
                     </div>
@@ -140,7 +147,7 @@ export default function SectionCheckout() {
                     <div className="paymentCard">
                         <header>
                             <h3>Pagamento</h3>
-                            <span>O pagamento é feito na entrega. Escolha a forma que deseja pagar</span>
+                            <p>Escolha a forma de Pagamento</p>
                         </header>
                         <div className="containerButton">
                             <div>

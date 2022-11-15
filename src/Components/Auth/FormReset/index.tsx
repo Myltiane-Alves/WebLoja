@@ -3,7 +3,7 @@ import * as S from '../styles/styles';
 import logo from '../../../assets/images/favicon.png'
 import { useForm } from 'react-hook-form';
 
-export default function SectionLogin() {
+export default function FormReset() {
     const {register, handleSubmit, reset , formState: { errors }} = useForm();
 
     return (

@@ -1,9 +1,9 @@
 import {BrowserRouter as  Router, Route, Routes } from "react-router-dom";
 import Cart from "../Components/Cart";
+import AuthMain from "../Pages/Auth";
 import Checkout from "../Pages/Checkout";
 import Contact from "../Pages/Contact";
 import { Home } from "../Pages/Home";
-import Login from "../Pages/Login";
 import PageCart from "../Pages/PageCart";
 import { Products } from "../Pages/Products";
 import Store from "../Pages/Store";
@@ -19,7 +19,7 @@ export function AppRoutes () {
                 <Route path="/contact" element={<Contact />} />
             </Routes>
            <Routes>
-                <Route path="/login" element={<Login />} />
+                <Route path="/auth" element={<AuthMain />} />
             </Routes>
             <Routes>
                 <Route path="/cart" element={<PageCart />} />

@@ -36,7 +36,7 @@ const MobileMenu:React.FC<MobileMenuProps> = ({ openMobileMenu }) => {
                     aria-label='Login'
                     className='btnLogin'
                   >
-                    <a href="/">Login</a>
+                    <a href="/login">Login</a>
                   </button>
                 </div>
               </li>
