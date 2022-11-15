@@ -16,7 +16,7 @@ body {
   margin: 0;
   width: 100%;
   place-items: center;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   /* overflow: hidden; */
   /* min-width: 320px;
   min-height: 100vh; */

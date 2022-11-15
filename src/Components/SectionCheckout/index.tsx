@@ -13,7 +13,7 @@ export default function SectionCheckout() {
                 <div className="cartDetails">
                     <div className="description">
                         <header>
-                            <h3>Endereço de Entrega</h3>
+                            <h2>Endereço de Entrega</h2>
                             <span>Informe o endereço onde deseja receber seu pedido</span>
                         </header>
                     </div>
@@ -25,7 +25,11 @@ export default function SectionCheckout() {
                             </div>
                             <div className="detailsCard">
 
-                                <h3>Oculos de Sol</h3>
+                                <div className="detailsDescription">
+                                    <h3>Oculos de Sol</h3>
+                                    <p>Cartier</p>
+                                </div>
+
                                 <div className="productPrice">
                                     <h4>Preço</h4>
                                     <span>R$ 50,00</span>
@@ -62,10 +66,13 @@ export default function SectionCheckout() {
 
                 <div className="orderComplete">
                     <div className="formPayment">
-                        <header>
-                            <h3>Endereço de Entrega</h3>
-                            <span>Informe o endereço onde deseja receber seu pedido</span>
-                        </header>
+                        <div className="orderDescription">
+                            <header>
+                                <h3>Endereço de Entrega</h3>
+                                <span>Informe o endereço onde deseja receber seu pedido</span>
+                            </header>
+
+                        </div>
                         <div className="paymentForm">
                             <form action="">
                                 <div className="fields">

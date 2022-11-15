@@ -8,7 +8,7 @@ export default function ButtonMinus() {
                 type="button"
                 className="btn"
               >
-                <AiOutlineMinus size={25}/>
+                <AiOutlineMinus size={30}/>
               </button>
         </S.Container>
     )

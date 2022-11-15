@@ -8,7 +8,7 @@ export default function ButtonAdd() {
                 type="button"
                 className="btn"
               >
-                <AiOutlinePlus size={25} />
+                <AiOutlinePlus size={30} />
               </button>
         </S.Container>
     )

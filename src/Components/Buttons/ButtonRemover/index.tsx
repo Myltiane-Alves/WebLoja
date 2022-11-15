@@ -8,7 +8,7 @@ export default function ButtonRemover() {
                 type="button"
                 className="btn"
               >
-                <FiTrash2 size={25} />
+                <FiTrash2 size={30} />
               </button>
         </S.Container>
     )
