@@ -4,7 +4,7 @@ import logo from '../../../assets/images/favicon.png'
 import { useForm } from 'react-hook-form';
 
 export default function FormEmail() {
-    const {register, handleSubmit, reset , formState: { errors }} = useForm();
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     return (
         <S.Container>
@@ -15,40 +15,38 @@ export default function FormEmail() {
                             <img src={logo} alt="logo" />
                         </a>
                     </Link>
+
                 </header>
-                <form action="">
-                    <h2>Login</h2>
+                <form id="auth-email">
+
+                    <h2>Autenticação</h2>
                     <div className="fields">
                         <div className="field">
                             <input
-                                type="text"
-                                placeholder="email"
-                                {...register("Email", {
+                                type="email"
+                                placeholder="E-mail"
+                                {...register("E-mail", {
                                     required: "Email é Obrigatório",
                                     // onChange: (e) =>
                                 })}
                             />
+                            {/* <label htmlFor="E-mail">E-mail</label> */}
                         </div>
-                        <div className="field">
-                            <input
-                                type="password"
-                                placeholder="Senha"
-                                {...register("Senha", {
-                                    required: "Email é Obrigatório",
-                                    // onChange: (e) =>
-                                })}
-                            />
-                        </div>
+
                     </div>
                     <div className="containerBtn">
-                        <button type="submit" className="btn">Entrar</button>
-                        <span>Ainda não tem uma conta?</span>
-                        <Link to="/signup">
-                            <a href="">Criar Conta</a>
-                        </Link>
+                        <div>
+                            <Link to="/auth#register">
+                                <a href="">Criar Conta</a>
+                            </Link>
+                            <button type="submit" className="btn">Próxima</button>
+                        </div>
                     </div>
                 </form>
+                <p>2022 Myltiane © All Rights reserved</p>
+
             </div>
+
 
         </S.Container>
     )

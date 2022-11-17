@@ -4,7 +4,7 @@ import logo from '../../../assets/images/favicon.png'
 import { useForm } from 'react-hook-form';
 
 export default function FormReset() {
-    const {register, handleSubmit, reset , formState: { errors }} = useForm();
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     return (
         <S.Container>
@@ -16,36 +16,25 @@ export default function FormReset() {
                         </a>
                     </Link>
                 </header>
-                <form action="">
-                    <h2>Login</h2>
+
+                <form id="auth-reset">
+                    <h2>Redefinir senha</h2>
                     <div className="fields">
                         <div className="field">
                             <input
                                 type="text"
-                                placeholder="email"
+                                placeholder="E-mail"
                                 {...register("Email", {
-                                    required: "Email é Obrigatório",
-                                    // onChange: (e) =>
-                                })}
-                            />
-                        </div>
-                        <div className="field">
-                            <input
-                                type="password"
-                                placeholder="Senha"
-                                {...register("Senha", {
-                                    required: "Email é Obrigatório",
-                                    // onChange: (e) =>
-                                })}
+                                    required: "Preencha o e-mail",
+                                })} readOnly
                             />
                         </div>
                     </div>
+
                     <div className="containerBtn">
-                        <button type="submit" className="btn">Entrar</button>
-                        <span>Ainda não tem uma conta?</span>
-                        <Link to="/signup">
-                            <a href="">Criar Conta</a>
-                        </Link>
+                        <div>
+                            <button type="submit" className="btn">Redefinir</button>
+                        </div>
                     </div>
                 </form>
             </div>

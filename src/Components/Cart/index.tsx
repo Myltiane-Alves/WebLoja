@@ -5,6 +5,14 @@ import { IoIosClose } from "react-icons/io";
 import ButtonMinus from '../Buttons/ButtonMinus';
 import oculos from '../../assets/images/arrivals/arrivals1.png'
 
+interface Product {
+    id: number;
+    name: string;
+    price: number;
+    image: string;
+    quantity: number;
+}
+
 export default function Cart() {
     return (
         <S.Container>

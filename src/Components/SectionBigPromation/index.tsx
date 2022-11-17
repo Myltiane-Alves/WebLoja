@@ -62,7 +62,7 @@ export default function BigPromation(){
             <h4>Arlo Hd Sistema De Vigilância</h4>
             <p>R$ 2.500,00</p>
           </div>
-          <div className="contentProdruct">
+          {/* <div className="contentProdruct">
             <div className="containerImg">
               <img src={hd} alt="Dune HD RealBox 4K" />
             </div>
@@ -82,7 +82,7 @@ export default function BigPromation(){
             </div>
             <h4>Lifesize Phone HD</h4>
             <p>R$ 350,00</p>
-          </div>
+          </div> */}
 
         </div>
 

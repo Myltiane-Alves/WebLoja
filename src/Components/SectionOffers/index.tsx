@@ -2,7 +2,11 @@ import { AiOutlineHeart, AiOutlinePlus, AiOutlineStar } from 'react-icons/ai'
 import * as S from './styles'
 import celular from '../../assets/images/flash/flash-3.png'
 
-export default function OffersInstant() {
+interface StarProps {
+    rating: string;
+}
+
+export default function OffersInstant(props: StarProps) {
   return (
     <S.Container>
       <div className="cardsProduct">
@@ -19,7 +23,7 @@ export default function OffersInstant() {
           <div className="productDetails">
             <h3>Smart Samsung Preto</h3>
             <div className="rate">
-              <AiOutlineStar className="star" />
+              <AiOutlineStar className="star" /> {props.rating}
               <AiOutlineStar className="star"/>
               <AiOutlineStar className="star" />
               <AiOutlineStar  className="star"/>

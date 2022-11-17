@@ -2,9 +2,12 @@ import { Link } from 'react-router-dom';
 import * as S from '../styles/styles';
 import logo from '../../../assets/images/favicon.png'
 import { useForm } from 'react-hook-form';
+import { useAuth } from '../AuthContext';
+import { FormDataLogin } from '../../../types/Auth/FormDataLogin';
 
 export default function FormLogin() {
-    const {register, handleSubmit, reset , formState: { errors }} = useForm();
+    const { register, handleSubmit,} = useForm();
+    const { email, onSubmitLogin } = useAuth();
 
     return (
         <S.Container>
@@ -16,36 +19,37 @@ export default function FormLogin() {
                         </a>
                     </Link>
                 </header>
-                <form action="">
+
+                <form id="auth-login" onSubmit={handleSubmit<FormDataLogin>(onSubmitLogin)}>
                     <h2>Login</h2>
                     <div className="fields">
                         <div className="field">
                             <input
                                 type="text"
-                                placeholder="email"
+                                placeholder="E-mail"
                                 {...register("Email", {
-                                    required: "Email é Obrigatório",
-                                    // onChange: (e) =>
-                                })}
+                                    required: "Preencha o e-mail",
+                                })} readOnly value={email}
                             />
                         </div>
+
                         <div className="field">
-                            <input
-                                type="password"
-                                placeholder="Senha"
+                            <input type="password" placeholder="Senha"
                                 {...register("Senha", {
-                                    required: "Email é Obrigatório",
-                                    // onChange: (e) =>
+                                    required: "Preencha a senha",
                                 })}
                             />
+                            {/* <label htmlFor="password">Digite sua Senha</label> */}
                         </div>
                     </div>
+
                     <div className="containerBtn">
-                        <button type="submit" className="btn">Entrar</button>
-                        <span>Ainda não tem uma conta?</span>
-                        <Link to="/signup">
-                            <a href="">Criar Conta</a>
-                        </Link>
+                        <div>
+                            <Link to="/auth#forget">
+                                <a href="">Esqueceu sua senha?</a>
+                            </Link>
+                            <button type="submit" className="btn">Login</button>
+                        </div>
                     </div>
                 </form>
             </div>

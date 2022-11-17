@@ -16,36 +16,22 @@ export default function FormForget() {
                         </a>
                     </Link>
                 </header>
-                <form action="">
-                    <h2>Login</h2>
-                    <div className="fields">
-                        <div className="field">
-                            <input
-                                type="text"
-                                placeholder="email"
-                                {...register("Email", {
-                                    required: "Email é Obrigatório",
-                                    // onChange: (e) =>
-                                })}
-                            />
+                <form id="auth-forget">
+                    <h2>Esqueci a senha</h2>
+
+                    <div className="loadingWrap">
+                        <div className="loading">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
                         </div>
-                        <div className="field">
-                            <input
-                                type="password"
-                                placeholder="Senha"
-                                {...register("Senha", {
-                                    required: "Email é Obrigatório",
-                                    // onChange: (e) =>
-                                })}
-                            />
-                        </div>
+                        <p>Por favor, aguarde... </p>
                     </div>
-                    <div className="containerBtn">
-                        <button type="submit" className="btn">Entrar</button>
-                        <span>Ainda não tem uma conta?</span>
-                        <Link to="/signup">
-                            <a href="">Criar Conta</a>
-                        </Link>
+
+                    <div className="message">
+                        <img src="" alt="" />
+                        <span>Verifique as instruções no seu e-mail.</span>
                     </div>
                 </form>
             </div>
