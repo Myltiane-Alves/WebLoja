@@ -59,8 +59,8 @@ export default function FormRegister() {
 
                     <div className="containerBtn">
                         <div>
-                            <Link to="/auth#forget">
-                                <a href="">Já tem uma conta?</a>
+                            <Link to="/login">
+                                <a href="/login">Já tem uma conta?</a>
                             </Link>
                             <button type="submit" className="btn">Cadastrar</button>
                         </div>

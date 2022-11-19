@@ -36,10 +36,12 @@ export default function FormEmail() {
                     </div>
                     <div className="containerBtn">
                         <div>
-                            <Link to="/auth#register">
-                                <a href="">Criar Conta</a>
+                            <Link to="/register">
+                                <a href="/register">Criar Conta</a>
                             </Link>
-                            <button type="submit" className="btn">Próxima</button>
+                            <button type="submit" className="btn">
+                                <a href="/auth">Próxima </a>
+                            </button>
                         </div>
                     </div>
                 </form>

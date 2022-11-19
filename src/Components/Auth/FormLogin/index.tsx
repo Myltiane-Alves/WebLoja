@@ -45,7 +45,7 @@ export default function FormLogin() {
 
                     <div className="containerBtn">
                         <div>
-                            <Link to="/auth#forget">
+                            <Link to="/forget">
                                 <a href="">Esqueceu sua senha?</a>
                             </Link>
                             <button type="submit" className="btn">Login</button>

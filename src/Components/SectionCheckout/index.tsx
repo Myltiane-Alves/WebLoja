@@ -86,19 +86,13 @@ export default function SectionCheckout() {
                                     <div className="field">
                                         <input
                                             type="text"
-                                            placeholder="Nome Completo"
+                                            placeholder="Endereço"
                                         />
                                     </div>
                                     <div className="field">
                                         <input
                                             type="text"
                                             placeholder="CEP"
-                                        />
-                                    </div>
-                                    <div className="field">
-                                        <input
-                                            type="text"
-                                            placeholder="Rua"
                                         />
                                     </div>
                                     <div className="field">
@@ -116,7 +110,7 @@ export default function SectionCheckout() {
                                     <div className="field">
                                         <input
                                             type="text"
-                                            placeholder="Complemento"
+                                            placeholder="Bairro"
                                         />
                                     </div>
                                     <div className="field">
@@ -137,6 +131,7 @@ export default function SectionCheckout() {
                                             placeholder="Pais"
                                         />
                                     </div>
+
                                 </div>
 
                             </form>

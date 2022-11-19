@@ -1,6 +1,11 @@
 import {BrowserRouter as  Router, Route, Routes } from "react-router-dom";
 import Cart from "../Components/Cart";
-import AuthMain from "../Pages/Auth";
+import AuthEmail from "../Pages/Auth/AuthEmail";
+import AuthForget from "../Pages/Auth/AuthForget";
+import AuthLogin from "../Pages/Auth/AuthLogin";
+import AuthMain from "../Pages/Auth/AuthLogin";
+import AuthRegister from "../Pages/Auth/AuthRegister";
+import AuthReset from "../Pages/Auth/AuthReset";
 import Checkout from "../Pages/Checkout";
 import Contact from "../Pages/Contact";
 import { Home } from "../Pages/Home";
@@ -19,7 +24,19 @@ export function AppRoutes () {
                 <Route path="/contact" element={<Contact />} />
             </Routes>
            <Routes>
-                <Route path="/auth" element={<AuthMain />} />
+                <Route path="/login" element={<AuthLogin />} />
+            </Routes>
+           <Routes>
+                <Route path="/auth" element={<AuthEmail />} />
+            </Routes>
+           <Routes>
+                <Route path="/register" element={<AuthRegister />} />
+            </Routes>
+           <Routes>
+                <Route path="/forget" element={<AuthForget />} />
+            </Routes>
+           <Routes>
+                <Route path="/reset" element={<AuthReset />} />
             </Routes>
             <Routes>
                 <Route path="/cart" element={<PageCart />} />
